@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Jabulani &amp; Sphosethu</title>
+  <meta name="description" content="Photo gallery for the wedding of Jabulani Tshabalala and Sphosethu Phiri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--scrolled" id="mainNav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">J &amp; S</a>
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="gallery.html"  class="nav__link active">Gallery</a></li>
+        <li><a href="registry.html" class="nav__link">Registry</a></li>
+        <li><a href="rsvp.html"     class="nav__link">RSVP</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav__mobile" id="mobileNav">
+    <a href="index.html"    class="nav__mobile-link">Home</a>
+    <a href="gallery.html"  class="nav__mobile-link">Gallery</a>
+    <a href="registry.html" class="nav__mobile-link">Registry</a>
+    <a href="rsvp.html"     class="nav__mobile-link">RSVP</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header__content">
+      <p class="page-header__pre">Our Story</p>
+      <h1 class="page-header__title">Gallery</h1>
+      <p class="page-header__subtitle">Moments we treasure together</p>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="gallery__container">
+
+      <div class="gallery__intro">
+        <span class="section-ornament">✦</span>
+        <h2 class="section-heading">Our Moments</h2>
+        <p class="section-subheading">A glimpse into our love story</p>
+      </div>
+
+      <!--
+        MOSAIC GRID — 5 tiles
+        · First item spans 2 rows (left column, full height)
+        · Items 2-5 fill right side (2×2)
+
+        TO ADD REAL PHOTOS:
+        Replace the empty src="" with your image path, e.g. src="images/photo1.jpg"
+        The placeholder tile will be hidden automatically once a valid src is set.
+      -->
+      <div class="gallery__grid">
+
+        <!-- Photo 1 — spans 2 rows (large feature image) -->
+        <figure class="gallery__item">
+          <img class="gallery__img" src="images/IMG-20260412-WA0033(1).jpg" alt="Jabulani and Sphosethu">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">⊕</span>
+          </div>
+        </figure>
+
+        <!-- Photo 2 -->
+        <figure class="gallery__item">
+          <img class="gallery__img" src="images/IMG-20260419-WA0036.jpg" alt="A special moment">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">⊕</span>
+          </div>
+        </figure>
+
+        <!-- Photo 3 -->
+        <figure class="gallery__item">
+          <img class="gallery__img" src="images/IMG-20260419-WA0037.jpg" alt="A cherished memory">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">⊕</span>
+          </div>
+        </figure>
+
+        <!-- Photo 4 -->
+        <figure class="gallery__item">
+          <img class="gallery__img" src="images/IMG-20260419-WA0038.jpg" alt="Joyful times">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">⊕</span>
+          </div>
+        </figure>
+
+        <!-- Photo 5 -->
+        <figure class="gallery__item">
+          <img class="gallery__img" src="images/IMG-20260419-WA0039.jpg" alt="Our journey">
+          <div class="gallery__overlay">
+            <span class="gallery__overlay-icon">⊕</span>
+          </div>
+        </figure>
+
+      </div><!-- /.gallery__grid -->
+
+      <p class="gallery__note">
+        Photos will be updated as we approach our special day.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <p class="footer__names">Jabulani &amp; Sphosethu</p>
+      <p class="footer__date">26 · 09 · 2026</p>
+      <p class="footer__family">Tshabalala &nbsp;·&nbsp; Phiri</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lightbox__prev"  id="lbPrev"  aria-label="Previous image">&#8592;</button>
+    <button class="lightbox__next"  id="lbNext"  aria-label="Next image">&#8594;</button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" id="lbImg" src="" alt="">
+    </div>
+    <p class="lightbox__counter" id="lbCounter"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

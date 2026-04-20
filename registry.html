@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Registry | Jabulani &amp; Sphosethu</title>
+  <meta name="description" content="Gift registry for the wedding of Jabulani Tshabalala and Sphosethu Phiri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--scrolled" id="mainNav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">J &amp; S</a>
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="gallery.html"  class="nav__link">Gallery</a></li>
+        <li><a href="registry.html" class="nav__link active">Registry</a></li>
+        <li><a href="rsvp.html"     class="nav__link">RSVP</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav__mobile" id="mobileNav">
+    <a href="index.html"    class="nav__mobile-link">Home</a>
+    <a href="gallery.html"  class="nav__mobile-link">Gallery</a>
+    <a href="registry.html" class="nav__mobile-link">Registry</a>
+    <a href="rsvp.html"     class="nav__mobile-link">RSVP</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header__content">
+      <p class="page-header__pre">Your generosity</p>
+      <h1 class="page-header__title">Gift Registry</h1>
+      <p class="page-header__subtitle">Help us begin our life together</p>
+    </div>
+  </header>
+
+  <!-- Registry Section -->
+  <section class="registry-section">
+    <div class="registry__container">
+
+      <div class="registry__intro">
+        <span class="section-ornament">✦</span>
+        <h2 class="section-heading">Our Wish List</h2>
+        <p class="registry__intro-text">
+          Your presence at our wedding is the greatest gift of all. Should you wish to
+          honour us with a gift, we have put together a few ideas below. Once an item
+          is marked as purchased, it will appear greyed out for other guests.
+        </p>
+      </div>
+
+      <!-- Items rendered here by registry.js -->
+      <div id="registryStatus" class="registry__status">
+        Loading registry items&hellip;
+      </div>
+      <div id="registryGrid" class="registry__grid" aria-live="polite"></div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <p class="footer__names">Jabulani &amp; Sphosethu</p>
+      <p class="footer__date">26 · 09 · 2026</p>
+      <p class="footer__family">Tshabalala &nbsp;·&nbsp; Phiri</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/registry.js"></script>
+</body>
+</html>

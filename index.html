@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jabulani & Sphosethu | 26 September 2026</title>
+  <meta name="description" content="Join us as Jabulani Tshabalala & Sphosethu Phiri celebrate their wedding on 26 September 2026 at TWK Welverdiend, Piet Retief.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">J &amp; S</a>
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link active">Home</a></li>
+        <li><a href="gallery.html"  class="nav__link">Gallery</a></li>
+        <li><a href="registry.html" class="nav__link">Registry</a></li>
+        <li><a href="rsvp.html"     class="nav__link">RSVP</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Navigation menu">
+    <a href="index.html"    class="nav__mobile-link">Home</a>
+    <a href="gallery.html"  class="nav__mobile-link">Gallery</a>
+    <a href="registry.html" class="nav__mobile-link">Registry</a>
+    <a href="rsvp.html"     class="nav__mobile-link">RSVP</a>
+  </div>
+
+  <!-- ============================================================
+       HERO SLIDER
+       ============================================================ -->
+  <section class="hero" id="hero" aria-label="Hero slideshow">
+    <div class="hero__slider" id="heroSlider">
+
+      <!-- Slide 1 — Names -->
+      <div class="hero__slide hero__slide--1 active" aria-hidden="false">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="hero__pre">The Wedding of</p>
+          <h1 class="hero__names">
+            Jabulani
+            <span class="hero__ampersand">&amp;</span>
+            Sphosethu
+          </h1>
+          <p class="hero__families">Tshabalala &nbsp;·&nbsp; Phiri</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 — Quote -->
+      <div class="hero__slide hero__slide--2" aria-hidden="true">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="hero__pre">A Love Story</p>
+          <h2 class="hero__quote">"Two hearts,<br>one journey"</h2>
+          <p class="hero__families">Tshabalala &nbsp;·&nbsp; Phiri</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 — Date & Venue -->
+      <div class="hero__slide hero__slide--3" aria-hidden="true">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="hero__pre">Join Us</p>
+          <h2 class="hero__date-display">26 September<br>2026</h2>
+          <p class="hero__venue-display">TWK Welverdiend &nbsp;·&nbsp; Piet Retief</p>
+        </div>
+      </div>
+
+      <!-- Slide 4 — Families -->
+      <div class="hero__slide hero__slide--4" aria-hidden="true">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="hero__pre">Together Forever</p>
+          <h2 class="hero__quote">"Where two families<br>become one"</h2>
+          <p class="hero__families">Tshabalala &nbsp;·&nbsp; Phiri</p>
+        </div>
+      </div>
+
+      <!-- Slide 5 — Dress Code -->
+      <div class="hero__slide hero__slide--5" aria-hidden="true">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="hero__pre">Dress Code</p>
+          <h2 class="hero__quote">Strictly Formal</h2>
+          <p class="hero__dress">All shades of brown with a touch of gold &amp; lemon</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dot indicators -->
+    <div class="hero__dots" id="heroDots" role="tablist" aria-label="Slides">
+      <button class="hero__dot active" data-index="0" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+      <button class="hero__dot"        data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+      <button class="hero__dot"        data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+      <button class="hero__dot"        data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+      <button class="hero__dot"        data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+    </div>
+
+    <!-- Scroll nudge -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DETAILS
+       ============================================================ -->
+  <section class="details" id="details">
+    <div class="details__container">
+      <span class="section-ornament">✦</span>
+      <h2 class="section-heading">Wedding Details</h2>
+      <p class="section-subheading">Everything you need to know</p>
+
+      <div class="details__grid">
+        <div class="details__card">
+          <div class="details__icon">📅</div>
+          <p class="details__card-title">Date</p>
+          <p class="details__card-text">26 September 2026</p>
+          <p class="details__card-sub">Saturday</p>
+        </div>
+        <div class="details__card">
+          <div class="details__icon">🕙</div>
+          <p class="details__card-title">Time</p>
+          <p class="details__card-text">10:00 AM</p>
+          <p class="details__card-sub">Ceremony Begins</p>
+        </div>
+        <div class="details__card">
+          <div class="details__icon">📍</div>
+          <p class="details__card-title">Venue</p>
+          <p class="details__card-text">TWK Welverdiend</p>
+          <p class="details__card-sub">Piet Retief</p>
+        </div>
+        <div class="details__card">
+          <div class="details__icon">👔</div>
+          <p class="details__card-title">Dress Code</p>
+          <p class="details__card-text">Strictly Formal</p>
+          <p class="details__card-sub">Brown · Gold · Lemon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COUNTDOWN
+       ============================================================ -->
+  <section class="countdown" id="countdown">
+    <div class="countdown__container">
+      <span class="section-ornament">✦</span>
+      <p class="countdown__label">Counting Down to Our Special Day</p>
+      <div class="countdown__timer" id="countdownTimer" aria-live="polite" aria-atomic="true">
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cdDays">000</span>
+          <span class="countdown__text">Days</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cdHours">00</span>
+          <span class="countdown__text">Hours</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cdMinutes">00</span>
+          <span class="countdown__text">Minutes</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cdSeconds">00</span>
+          <span class="countdown__text">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="cta">
+    <div class="cta__container">
+      <p class="cta__pre">You're Invited</p>
+      <h2 class="cta__heading">Will You Join Us?</h2>
+      <p class="cta__text">
+        We would be honoured to celebrate this joyful day surrounded by the people
+        we love. Please RSVP by <strong>31 August 2026</strong>.
+      </p>
+      <a href="rsvp.html" class="btn btn--primary">RSVP Now</a>
+      <p class="cta__contact">
+        Questions? Contact <strong>Slindo Phiri</strong>
+        &nbsp;·&nbsp;
+        <a href="tel:0643381780">064 338 1780</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div>
+      <p class="footer__names">Jabulani &amp; Sphosethu</p>
+      <p class="footer__date">26 · 09 · 2026</p>
+      <p class="footer__family">Tshabalala &nbsp;·&nbsp; Phiri</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

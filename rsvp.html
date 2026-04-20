@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP | Jabulani &amp; Sphosethu</title>
+  <meta name="description" content="RSVP to the wedding of Jabulani Tshabalala and Sphosethu Phiri on 26 September 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--scrolled" id="mainNav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">J &amp; S</a>
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="gallery.html"  class="nav__link">Gallery</a></li>
+        <li><a href="registry.html" class="nav__link">Registry</a></li>
+        <li><a href="rsvp.html"     class="nav__link active">RSVP</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav__mobile" id="mobileNav">
+    <a href="index.html"    class="nav__mobile-link">Home</a>
+    <a href="gallery.html"  class="nav__mobile-link">Gallery</a>
+    <a href="registry.html" class="nav__mobile-link">Registry</a>
+    <a href="rsvp.html"     class="nav__mobile-link">RSVP</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header__content">
+      <p class="page-header__pre">26 September 2026</p>
+      <h1 class="page-header__title">RSVP</h1>
+      <p class="page-header__subtitle">Please respond by 31 August 2026</p>
+    </div>
+  </header>
+
+  <!-- RSVP Section -->
+  <section class="rsvp-section">
+    <div class="rsvp__container">
+
+      <div class="rsvp__intro">
+        <span class="section-ornament">✦</span>
+        <h2 class="section-heading">Kindly Reply</h2>
+        <p class="rsvp__intro-text">
+          We would be so honoured to have you join us on our special day.
+          Please fill in the form below to let us know if you are able to attend.
+        </p>
+      </div>
+
+      <!-- Success state (shown after successful submission) -->
+      <div class="rsvp__success" id="rsvpSuccess" role="alert" aria-live="polite">
+        <div class="rsvp__success-icon">✦</div>
+        <h2 class="rsvp__success-heading">Thank You!</h2>
+        <p class="rsvp__success-text">
+          Your RSVP has been received. We look forward to celebrating with you
+          on <strong>26 September 2026</strong>.
+        </p>
+      </div>
+
+      <!-- Form -->
+      <form class="rsvp__form" id="rsvpForm" novalidate>
+
+        <!-- Row: First Name + Last Name -->
+        <div class="form__row">
+          <div class="form__group">
+            <label for="firstName" class="form__label">
+              First Name <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form__input"
+              autocomplete="given-name"
+              required
+            >
+            <span class="form__error" id="firstNameError" role="alert"></span>
+          </div>
+          <div class="form__group">
+            <label for="lastName" class="form__label">
+              Last Name <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form__input"
+              autocomplete="family-name"
+              required
+            >
+            <span class="form__error" id="lastNameError" role="alert"></span>
+          </div>
+        </div>
+
+        <!-- Row: Email + Phone -->
+        <div class="form__row">
+          <div class="form__group">
+            <label for="email" class="form__label">
+              Email Address <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__input"
+              autocomplete="email"
+              required
+            >
+            <span class="form__error" id="emailError" role="alert"></span>
+          </div>
+          <div class="form__group">
+            <label for="phone" class="form__label">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form__input"
+              autocomplete="tel"
+            >
+            <span class="form__error" id="phoneError" role="alert"></span>
+          </div>
+        </div>
+
+        <!-- Attending -->
+        <div class="form__group">
+          <label for="attending" class="form__label">
+            Will you be attending? <span class="req" aria-hidden="true">*</span>
+          </label>
+          <div class="form__select-wrap">
+            <select id="attending" name="attending" class="form__select" required>
+              <option value="" disabled selected>Please select</option>
+              <option value="yes">Yes, I will be there!</option>
+              <option value="no">Unfortunately I cannot attend</option>
+            </select>
+          </div>
+          <span class="form__error" id="attendingError" role="alert"></span>
+        </div>
+
+        <!-- Guest count (shown only when attending = yes) -->
+        <div class="form__group form__group--guests" id="guestCountGroup">
+          <label for="guestCount" class="form__label">
+            Number of Guests (including yourself) <span class="req" aria-hidden="true">*</span>
+          </label>
+          <div class="form__select-wrap">
+            <select id="guestCount" name="guestCount" class="form__select">
+              <option value="" disabled selected>Select guest count</option>
+              <option value="1">1 — Just me</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6+</option>
+            </select>
+          </div>
+          <span class="form__error" id="guestCountError" role="alert"></span>
+        </div>
+
+        <!-- Dietary Requirements -->
+        <div class="form__group">
+          <label for="dietary" class="form__label">Dietary Requirements</label>
+          <input
+            type="text"
+            id="dietary"
+            name="dietary"
+            class="form__input"
+            placeholder="e.g. Vegetarian, Halaal, Allergies…"
+          >
+        </div>
+
+        <!-- Message -->
+        <div class="form__group">
+          <label for="message" class="form__label">Message to the Couple</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form__textarea"
+            rows="4"
+            placeholder="Share your wishes for Jabulani &amp; Sphosethu…"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="form__submit" id="rsvpSubmit">
+          Send My RSVP
+        </button>
+
+      </form>
+
+      <!-- Contact -->
+      <div class="rsvp__contact">
+        <p class="rsvp__contact">
+          Need help with your RSVP? Contact <strong>Slindo Phiri</strong>
+          &nbsp;·&nbsp;
+          <a href="tel:0643381780">064 338 1780</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <p class="footer__names">Jabulani &amp; Sphosethu</p>
+      <p class="footer__date">26 · 09 · 2026</p>
+      <p class="footer__family">Tshabalala &nbsp;·&nbsp; Phiri</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/rsvp.js"></script>
+</body>
+</html>
