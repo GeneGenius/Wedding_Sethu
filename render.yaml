@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: Wedding-sethu
-    runtime: static
-    buildCommand: ""
-    staticPublishPath: .
