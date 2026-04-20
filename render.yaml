@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Wedding_Sethu
+    name: Wedding-sethu
     env: static
     buildCommand: ""
     staticPublishPath: .
