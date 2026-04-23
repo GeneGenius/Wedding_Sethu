@@ -191,7 +191,7 @@ ul   { list-style: none; }
   opacity: 0;
   transition: opacity 1s ease;
 }
-.hero__slide.active { opacity: 0; }
+.hero__slide.active { opacity: 1; }
 
 /* ---- Slide Backgrounds ---- */
 .hero__slide--1 {
