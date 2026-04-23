@@ -194,26 +194,16 @@ ul   { list-style: none; }
 .hero__slide.active { opacity: 1; }
 
 /* ---- Slide Backgrounds ---- */
-.hero__slide--1 {
-  background: url('../images/IMG-20260419-WA0030.jpg') center/cover no-repeat;
-}
-.hero__slide--2 {
-  background: url('../images/IMG-20260419-WA0031.jpg') center/cover no-repeat;
-}
-.hero__slide--3 {
-  background: url('../images/IMG-20260419-WA0033.jpg') center/cover no-repeat;
-}
-.hero__slide--4 {
-  background: url('../images/IMG-20260419-WA0034.jpg') center/cover no-repeat;
-}
-.hero__slide--5 {
-  background: url('../images/IMG-20260419-WA0035.jpg') center/cover no-repeat;
-}
+.hero__slide--1 { background: var(--brown-900); }
+.hero__slide--2 { background: var(--brown-800); }
+.hero__slide--3 { background: var(--brown-900); }
+.hero__slide--4 { background: var(--brown-800); }
+.hero__slide--5 { background: var(--brown-900); }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(26, 10, 4, 0.72);
+  background: rgba(26, 10, 4, 0.30);
 }
 
 /* Gold shimmer lines on slides */
