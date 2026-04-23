@@ -188,7 +188,7 @@ ul   { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 1s ease;
 }
 .hero__slide.active { opacity: 1; }
